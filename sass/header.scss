@@ -1,0 +1,27 @@
+.navbar-fixed-top .container {
+	border-bottom: 1px solid #eee;
+}
+.jumbotron {
+	max-height: 90vh;
+	min-height: 500px;
+	padding-top: 150px;
+	p {
+		padding: 15px;
+		color: white;
+	}
+}
+
+.hero__title {
+	margin-top: 1.25em;
+	margin-bottom: 1em;
+	font-size: 4.8rem;
+	font-weight: 100;
+}
+
+.jumbotron {
+	background-image: url(../../img/noise.png), url(../../img/exclusive_paper.png);
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+/* background: url("../../img/erbs.jpg"); */
+/* background-size: cover; */
+}

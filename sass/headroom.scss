@@ -1,0 +1,93 @@
+.headroom {
+	position: fixed;
+	z-index: 10;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+.headroom {
+	transition: transform .25s ease-in-out;
+	will-change: transform;
+}
+@-moz-keyframes slideDown {
+	0% {
+		-moz-transform: translateY(-100%);
+	}
+
+	100% {
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes slideDown {
+	0% {
+		-o-transform: translateY(-100%);
+	}
+
+	100% {
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.animated.slideDown {
+	-webkit-animation-name: slideDown;
+	-moz-animation-name: slideDown;
+	-o-animation-name: slideDown;
+	animation-name: slideDown;
+	transition: transform .25s ease-in-out;
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+
+	100% {
+		-webkit-transform: translateY(-98%);
+	}
+}
+@-moz-keyframes slideUp {
+	0% {
+		-moz-transform: translateY(0);
+	}
+
+	100% {
+		-moz-transform: translateY(-98%);
+	}
+}
+@-o-keyframes slideUp {
+	0% {
+		-o-transform: translateY(0);
+	}
+
+	100% {
+		-o-transform: translateY(-98%);
+	}
+}
+@keyframes slideUp {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-98%);
+	}
+}
+
+.animated.slideUp {
+	-webkit-animation-name: slideUp;
+	-moz-animation-name: slideUp;
+	-o-animation-name: slideUp;
+	animation-name: slideUp;
+	transition: transform .25s ease-in-out;
+}

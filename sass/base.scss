@@ -1,0 +1,29 @@
+html body {
+	font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.8;
+	color: #4d4d4d;
+}
+.betting-section {
+	padding-top: 70px;
+	position: relative;
+	z-index: 1;
+}
+
+video.video-wrap {
+	z-index: 0;
+	position: absolute;
+	top: -20%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: auto;
+	min-width: 100%;
+	max-width: none;
+	height: auto;
+	min-height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	opacity: 1;
+}
