@@ -1066,6 +1066,13 @@ video.video-wrap {
   object-fit: cover;
   opacity: 1; }
 
+.section-title h4:after {
+  content: "";
+  display: block;
+  height: 20px;
+  background-image: url(../../img/border_diagonal.png);
+  background-position: center bottom; }
+
 input {
   line-height: normal;
   padding: 10px 10px;
