@@ -6,14 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Emiliano Borzelli</title>
+  <meta name="google-signin-client_id" content="707446178715-rl840tqjvi5uesajh0ft7sn12m87k8nt.apps.googleusercontent.com">
+  <meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
+  <title>Emiliano Borzelli</title>
 
   <link rel="stylesheet" href="dist/css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
   <script src="js/headroom.min.js"></script>
+  <script src="js/analyticsAPI.js"></script>
   <script src="https://use.fontawesome.com/b802d30793.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,7 +49,7 @@
 <!--    <video class="video-wrap" autoplay="" loop="" muted="" poster="" playsinline="">
  <source type="video/mp4" src="img/vid-bg-1.mp4"></video> -->
 
-   <div class="container" style="padding-top: 80px;">
+   <div class="container homepage-hero" style="padding-top: 80px;">
     <div class="row">
       <div class="col-md-9 col-xs-12">
         <h1 class="hero__title">Front-end <a class="hero__link" target="_blank" href="https://github.com/vibrains">developer</a> and <a href="https://www.behance.net/vibrains" target="_blank" class="hero__Link hero__link--second">designer</a> living in Atlanta. I admire the small, simple, and strange.</h1>
@@ -108,13 +112,27 @@
     <div class="row">
       <div class="item-content">
         <div class="col-xs-12" style="padding-top: 30px;">
+          <h4>Vibrains.com Analytics Reporting API V4</h4>
+          <!-- The Sign-in button. This will run `queryReports()` on success. -->
+          <div class="g-signin2" data-onsuccess="queryReports"></div>
+          <p><button style="margin-top: 20px" class="btn btn-primary" href="#" onclick="signOut();">Sign out</button></p>
+          <!-- The API response will be printed here. -->
+          <textarea style="margin-top: 30px;" cols="100%" rows="20" id="query-output"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section-title">
+    <div class="row">
+      <div class="item-content">
+        <div class="col-xs-12" style="padding-top: 30px;">
           <h4>JSON Data Parsed to Table</h4>
           <iframe width="100%" height="600" src="//jsfiddle.net/vibrains/u3Lkkpqn/2/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
         </div>
       </div>
     </div>
   </div>
-
 
   <div class="container">
     <h4>Latest Writes</h4>
@@ -184,6 +202,7 @@
    <p>&copy; 2016 Company, Inc.</p>
  </footer>
 </div> <!-- /container -->
+<script src="https://apis.google.com/js/client:platform.js"></script>
 <script src="js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

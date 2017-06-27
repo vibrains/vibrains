@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Lato Regular';
+	src: url('../../fonts/lato-regular.woff2') format('woff2')
+}
+@font-face {
+	font-family: 'Lato Bold';
+	src: url('../../fonts/lato-bold.woff2') format('woff2')
+}
+@font-face {
+	font-family: 'Lato Black';
+	src: url('../../fonts/lato-black.woff2') format('woff2')
+}
+
+p {
+	font-family: 'Lato Regular', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.8;
+	color: $text;
+}
+h1 {
+	color: $text;
+}
