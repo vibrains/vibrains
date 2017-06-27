@@ -7,7 +7,7 @@ for (var i=0; i < inputs.length; i++) {
     var add = this.value * (this.checked ? 1 : -1);
     total.innerHTML = parseFloat(total.innerHTML) + add
 }
-}
+};
 
 var balance = 500;
 document.getElementById('addBet').addEventListener('click', play);
@@ -37,7 +37,7 @@ function play() {
             	alert('You ran out of money...'); 
 
             }
-            document.getElementById('account').textContent = "You have $" + (balance.toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+            document.getElementById('account').textContent = (balance.toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2}));
         }
         document.getElementById('bet').value = 0;
     }
@@ -49,7 +49,7 @@ function play() {
     {
     	alert("Your bet is too low, please bet $1.00 or more.");
     }
-}
+};
 
 function addMoney () {
 	var money = parseInt(document.getElementById('money').value, 10);
@@ -65,9 +65,9 @@ function addMoney () {
 			alert("Please add an amount equal or grater than $1.00");
 		}
 	}
-	document.getElementById("account").textContent = "You have $" + (balance.toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+	document.getElementById("account").textContent = (balance.toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2}));
 	document.getElementById('money').value = 0;
-}
+};
 
 //Headroom JS
 var myElement = document.querySelector(".headroom");

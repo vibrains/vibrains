@@ -5,7 +5,6 @@
  *
  * Copyright (c) 2017 Daniel Eden
  */
-@import url("../../node_modules/bourbon/app/assets/stylesheets/_bourbon.scss");
 .animated {
   animation-duration: 0.25s;
   animation-fill-mode: both; }
@@ -1040,7 +1039,7 @@
   animation-name: slideOutUp; }
 
 html body {
-  font-family: 'Lato Regular', Helvetica, Arial, sans-serif;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.8; }
@@ -1233,7 +1232,7 @@ a.navbar-brand {
 .item {
   margin-top: 0;
   margin-bottom: 1.5rem;
-  padding: 20px 0;
+  padding: 20px 10px;
   text-align: left;
   position: relative;
   background: #fff;
