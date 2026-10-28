@@ -6,6 +6,18 @@ Expertise in full-stack development, internal product design, and AI-augmented w
 
 <table>
   <tr>
+    <td colspan="2" valign="top">
+      <a href="https://apps.apple.com/app/id6787153920">
+        <img src="assets/from-here.webp" alt="From Here" />
+      </a>
+      <p><strong><a href="https://apps.apple.com/app/id6787153920">From Here</a></strong> · iOS App<br/>
+      Native iOS app for sending postcards from your photos. Pick a photo, write a note, and it gets printed and mailed with a private journal that syncs offline across devices.</p>
+      <a href="https://apps.apple.com/app/id6787153920">
+        <img src="assets/app-store-badge.svg" alt="Download on the App Store" height="40" />
+      </a>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <a href="https://explain-that-strategy.streamlit.app/">
         <img src="https://vibrains.com/thumbnails/explain-that-strategy.png" alt="Explain That Strategy" />
